@@ -17,7 +17,7 @@ function check($filepath,$filename,$path)
 	$count = 0;
 	for($i = 0; $i<count($lines); $i++)
 	{
-		if(preg_match('[select|SELECT|FROM|from]',$lines[$i])==true)
+		if(preg_match('[select|SELECT|FROM|from|INSERT|insert]',$lines[$i])==true)
 		{
 			$line = $lines[$i];
 			//echo $path.$filename;
